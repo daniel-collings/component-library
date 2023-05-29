@@ -23,6 +23,7 @@ module.exports = {
         "jsx-a11y"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
     },
     "settings": {
         "react": {
