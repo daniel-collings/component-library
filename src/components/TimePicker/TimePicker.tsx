@@ -5,14 +5,13 @@ interface TimePickerProps extends React.ComponentPropsWithoutRef<'input'> {
   label?: string;
   error?: boolean;
   message?: string;
-  success?: boolean;
   disabled?: boolean;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 }
 
 export default function TimePicker({id, name, onChange, ...props}: TimePickerProps) {
   return (
-    <>
+    <div>
       {props.label &&
         <label aria-label={props.label} htmlFor={name}>
           {props.label}
@@ -28,7 +27,7 @@ export default function TimePicker({id, name, onChange, ...props}: TimePickerPro
 
 
       {props.error && <p>{props.message}</p>}
-    </>
+    </div>
   );
 }
 
