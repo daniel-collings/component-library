@@ -10,7 +10,6 @@ interface TimePickerProps extends React.ComponentPropsWithoutRef<'input'> {
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 }
 
-// eslint-disable-next-line max-len
 export default function TimePicker({id, name, onChange, ...props}: TimePickerProps) {
   return (
     <>

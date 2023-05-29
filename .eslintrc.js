@@ -1,21 +1,21 @@
-{
+module.exports = {
     "env": {
         "browser": true,
+        "commonjs": true,
         "es2021": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "plugin:jsx-a11y/recommended",
-        "plugin:react/jsx-runtime"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsx-a11y/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "ecmaVersion": "latest"
     },
     "plugins": [
         "react",
@@ -23,5 +23,10 @@
         "jsx-a11y"
     ],
     "rules": {
-    }
+    },
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
 }
