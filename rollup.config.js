@@ -7,7 +7,9 @@ import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
 
-const packageJson = require('./package.json');
+import { createRequire } from 'node:module';
+const requireFile = createRequire(import.meta.url);
+const packageJson = requireFile('./package.json');
 
 export default [
   {
@@ -40,8 +42,7 @@ export default [
   },
   {
     input: 'src/index.ts',
-    output: [{file: 'dist/types.d.ts', format: 'es', sourcemap: true,
-  }],
+    output: [{file: 'dist/index.d.ts', format: 'es'}],
     plugins: [dts.default()],
   },
 ];
