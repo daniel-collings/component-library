@@ -1,0 +1,30 @@
+*{
+    color:rgb(57, 60, 60)
+}
+
+input{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: xx-large;
+    border-radius: 5px;
+}
+
+.container{
+    align-items: center;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: rgb(238, 240, 241, 0.2);
+    padding: 1rem;
+    box-shadow: 3px 2px rgb(238, 240, 241, 0.8);
+}
+
+label{
+    font-size: xx-large;
+    padding: 1rem;
+
+}
+
+.errorMessage{
+    color: rgb(213, 25, 25);
+    font-weight: 700;
+}

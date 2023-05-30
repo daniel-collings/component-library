@@ -14,11 +14,12 @@ module.exports = {
   },
   "plugins": ["react", "@typescript-eslint", "jsx-a11y"],
   "rules": {
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "semi": ["error", "never"]
   },
   "settings": {
     "react": {
       "version": "detect"
     }
   }
-};
+}
